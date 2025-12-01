@@ -1,0 +1,148 @@
+.hero {
+      background-color: var(--maroon);
+      color: var(--white);
+      padding: 120px 0 80px;
+      text-align: center;
+}
+
+.title {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--gold);
+}
+
+.subtitle {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+}
+
+.history {
+      padding: 80px 0;
+}
+
+.sectionTitle {
+      font-size: 2.5rem;
+      color: var(--maroon);
+      margin-bottom: 40px;
+      text-align: center;
+}
+
+.timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+}
+
+.timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: var(--saffron);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+}
+
+.timelineItem {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+}
+
+.timelineItem::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      right: -10px;
+      background-color: var(--white);
+      border: 4px solid var(--maroon);
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+}
+
+.left {
+      left: 0;
+}
+
+.right {
+      left: 50%;
+}
+
+.left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid white;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent white;
+}
+
+.right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+}
+
+.right::after {
+      left: -10px;
+}
+
+.content {
+      padding: 20px 30px;
+      background-color: white;
+      position: relative;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.year {
+      font-weight: bold;
+      color: var(--maroon);
+      margin-bottom: 5px;
+      display: block;
+}
+
+@media (max-width: 600px) {
+      .timeline::after {
+            left: 31px;
+      }
+
+      .timelineItem {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+      }
+
+      .timelineItem::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+      }
+
+      .left::after,
+      .right::after {
+            left: 21px;
+      }
+
+      .right {
+            left: 0%;
+      }
+}

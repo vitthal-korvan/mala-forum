@@ -1,0 +1,100 @@
+.wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 40px;
+}
+
+.infoBox {
+      padding: 40px;
+      background-color: var(--maroon);
+      color: var(--white);
+      border-radius: 20px;
+}
+
+.infoTitle {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--gold);
+}
+
+.infoItem {
+      margin-bottom: 30px;
+}
+
+.infoItem h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--saffron);
+}
+
+.infoItem p {
+      line-height: 1.6;
+      opacity: 0.9;
+}
+
+.formBox {
+      padding: 40px;
+      background-color: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.formTitle {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--maroon);
+}
+
+.formGroup {
+      margin-bottom: 20px;
+}
+
+.label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--text-dark);
+}
+
+.input,
+.textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+      outline: none;
+      border-color: var(--maroon);
+}
+
+.textarea {
+      min-height: 150px;
+      resize: vertical;
+}
+
+.submitBtn {
+      width: 100%;
+      padding: 15px;
+      background-color: var(--maroon);
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+      background-color: var(--saffron);
+}
+
+@media (max-width: 768px) {
+      .wrapper {
+            grid-template-columns: 1fr;
+      }
+}

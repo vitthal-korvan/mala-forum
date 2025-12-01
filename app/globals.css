@@ -26,9 +26,18 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Arial', sans-serif; /* We can update this to a Google Font later if needed */
+  font-family: var(--font-jakarta), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins), sans-serif;
 }
 
 * {
@@ -59,7 +68,8 @@ button {
   padding: 0 20px;
 }
 
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 

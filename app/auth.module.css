@@ -1,0 +1,84 @@
+.container {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: var(--off-white);
+}
+
+.card {
+      background-color: var(--white);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 500px;
+}
+
+.title {
+      font-size: 2rem;
+      color: var(--maroon);
+      margin-bottom: 10px;
+      text-align: center;
+}
+
+.subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+}
+
+.formGroup {
+      margin-bottom: 20px;
+}
+
+.label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--text-dark);
+}
+
+.input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+}
+
+.input:focus {
+      outline: none;
+      border-color: var(--maroon);
+}
+
+.submitBtn {
+      width: 100%;
+      padding: 15px;
+      background-color: var(--maroon);
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+}
+
+.submitBtn:hover {
+      background-color: var(--saffron);
+}
+
+.footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+}
+
+.link {
+      color: var(--maroon);
+      font-weight: bold;
+      text-decoration: underline;
+}
