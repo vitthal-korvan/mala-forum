@@ -60,7 +60,7 @@ export default function Header() {
           
           <nav className={styles.menu}>
             <Link href="/about" className={styles.link}>About</Link>
-            <Link href="/shaadi" className={styles.link}>Shaadi</Link>
+            <Link href="/shaadi" target='_blank' className={styles.link}>Shaadi</Link>
             <Link href="/news" className={styles.link}>News</Link>
             <Link href="/events" className={styles.link}>Events</Link>
             <Link href="/contact" className={styles.link}>Contact</Link>

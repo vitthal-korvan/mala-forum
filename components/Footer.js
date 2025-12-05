@@ -36,6 +36,7 @@ export default function Footer() {
         
         <div className={styles.copyright}>
           <p>&copy; {new Date().getFullYear()} Mala Holeya Samajh. All rights reserved.</p>
+          <p>Created by <a href="https://codesubtle.com">Codesubtle</a></p>
         </div>
       </div>
     </footer>
